@@ -12,7 +12,7 @@ class Solution {
                 q.pollLast();
             }
             q.offerLast(j);
-            if(j >= k - 1){
+            if(j > k - 2){
                 ans[idx++] = nums[q.peekFirst()];
             }
         }
