@@ -1,48 +1,37 @@
 class Solution {
     public String smallestSubsequence(String s, int k, char letter, int repetition) {
+        int n = s.length();
         int remain = 0;
-        for(char ch : s.toCharArray()){
-            if(ch == letter){
-                remain++;
-            }
+        for (int i = 0; i < n; i++) {
+            if (s.charAt(i) == letter) remain++;
         }
-        Stack<Character> st = new Stack<>();
-        int used = 0;
-        for(int j = 0; j < s.length(); j++){
-            char ch = s.charAt(j);
-            if(ch == letter){
-                remain--;
-            }
-            while(!st.isEmpty() && st.peek() > ch){
-                if((st.size() - 1) + (s.length() - j) < k){
-                    break;
-                }
-                if(st.peek() == letter){
-                    if((used - 1) + remain < repetition){
-                        break;
-                    }
+        char[] st = new char[k];
+        int top = 0;  
+        int used = 0;             
+        for (int i = 0; i < n; i++) {
+            char c = s.charAt(i);
+            if (c == letter) remain--;
+            while (top > 0 && st[top - 1] > c) {
+                if ((top - 1) + (n - i) < k) break;
+                if (st[top - 1] == letter) {
+                    if ((used - 1) + remain < repetition) break;
                     used--;
                 }
-                st.pop();
+                top--;
             }
-            if(st.size() < k){
-                if(ch == letter){
-                    st.push(ch);
+            if (top < k) {
+                if (c == letter) {
+                    st[top++] = c;
                     used++;
-                }
-                else{
-                    int slots = k - st.size();
+                } else {
+                    int slots = k - top;
                     int needed = repetition - used;
-                    if(slots > needed){
-                        st.push(ch);
+                    if (slots > needed) {
+                        st[top++] = c;
                     }
                 }
             }
         }
-        StringBuilder sb = new StringBuilder();
-        while(!st.isEmpty()){
-            sb.append(st.pop());
-        }
-        return sb.reverse().toString();
+        return new String(st, 0, k);
     }
 }
