@@ -1,20 +1,17 @@
 class Solution {
     public long maxTotal(int[] value, int[] limit) {
-        HashMap<Integer, PriorityQueue<Integer>> map = new HashMap<>();
         int n = value.length;
-        long ans = 0;
-        for (int i = 0; i < n; i++) {
-            map.computeIfAbsent(limit[i], k -> new PriorityQueue<>(Collections.reverseOrder()))
-               .add(value[i]);
+        List<Integer>[] groups = new ArrayList[n + 1];
+        for (int i = 1; i <= n; i++) groups[i] = new ArrayList<>();
+        for (int i = 0; i < n; i++) groups[limit[i]].add(value[i]);
+        long total = 0;
+        for (int k = 1; k <= n; k++) {
+            List<Integer> list = groups[k];
+            if (list.isEmpty()) continue;
+            Collections.sort(list, Collections.reverseOrder());
+            int count = Math.min(k, list.size());
+            for (int i = 0; i < count; i++) total += list.get(i);
         }
-        for (Map.Entry<Integer, PriorityQueue<Integer>> entry : map.entrySet()) {
-            int lim = entry.getKey();
-            PriorityQueue<Integer> pq = entry.getValue();
-
-            for (int i = 0; i < lim && !pq.isEmpty(); i++) {
-                ans += pq.poll();
-            }
-        }
-        return ans;
+        return total;
     }
 }
