@@ -4,7 +4,7 @@ class Solution {
         Arrays.sort(nums);
         int ans = 0;
         for(int i = 0; i < n; i+=2){
-            ans += Math.min(nums[i] , nums[i+1]);
+            ans += nums[i];
         }
         return ans;
     }
