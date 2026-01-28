@@ -16,9 +16,9 @@ class Solution {
             int y = points[i][1];
             int count = 0;
             for(int j = y; j <= 100; j++){
-                List<Integer> curr = list[j];
-                int idx = lowerbound(curr, x);
-                count += curr.size() - idx;
+                if(list[j].isEmpty()) continue;
+                int idx = lowerbound(list[j], x);
+                count += list[j].size() - idx;
             }
             res[i] = count;
         }
