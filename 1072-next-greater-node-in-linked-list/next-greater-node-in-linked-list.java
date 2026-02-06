@@ -9,21 +9,20 @@
  * }
  */
 class Solution {
-    public int[] nextLargerNodes(ListNode head){
-        int n = 0;
-        ListNode node = head;
-        while(node != null){
-            n++;
-            node = node.next;
+    public int[] nextLargerNodes(ListNode head) {
+        List<Integer> list = new ArrayList<>();
+        while(head != null){
+            list.add(head.val);
+            head = head.next;
         }
+        int n = list.size();
         int res[] = new int[n];
-        int idx = 0;
-        ArrayDeque<int[]> st = new ArrayDeque<>();
-        for(ListNode i = head; i != null; i = i.next){
-            while(!st.isEmpty() && st.peek()[0] < i.val){
-                res[st.pop()[1]] = i.val;
+        ArrayDeque<Integer> st = new ArrayDeque<>();
+        for(int i = 0; i < n; i++){
+            while(!st.isEmpty() && list.get(st.peek()) < list.get(i)){
+                res[st.pop()] = list.get(i); 
             }
-            st.push(new int[]{i.val, idx++});
+            st.push(i);
         }
         return res;
     }
