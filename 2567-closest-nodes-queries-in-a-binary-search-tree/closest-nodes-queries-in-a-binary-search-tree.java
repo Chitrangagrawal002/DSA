@@ -25,41 +25,35 @@ class Solution {
         inorder(root, list);
         List<List<Integer>> res = new ArrayList<>();
         for(int q : queries){
-            int floor = lower(list, q);
-            int ceil  = upper(list, q);
-            res.add(Arrays.asList(floor, ceil));
+            res.add(search(list, q));
         }
 
         return res;
     }
-    public int lower(List<Integer> list, int target){
+    public List<Integer> search(List<Integer> list, int target){
         int l = 0, r = list.size()-1;
-        int ans = -1;
-
+        int floor = -1;
         while(l <= r){
             int mid = l + (r-l)/2;
             if(list.get(mid) <= target){
-                ans = list.get(mid);
+                floor = list.get(mid);
                 l = mid + 1;
             } else {
                 r = mid - 1;
             }
         }
-        return ans;
-    }
-    public int upper(List<Integer> list, int target){
-        int l = 0, r = list.size()-1;
-        int ans = -1;
-
+        l = 0;
+        r = list.size() - 1;
+        int ceil = -1;
         while(l <= r){
             int mid = l + (r-l)/2;
             if(list.get(mid) >= target){
-                ans = list.get(mid);
+                ceil = list.get(mid);
                 r = mid - 1;
             } else {
                 l = mid + 1;
             }
         }
-        return ans;
+        return Arrays.asList(floor, ceil);
     }
 }
