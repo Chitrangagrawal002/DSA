@@ -19,9 +19,9 @@ class Solution {
 
         if(l==null || r==null ) return false;
        
-        boolean f=(l.val==r.val) && solve(l.left,r.right);
-        boolean s=(l.val==r.val) && solve(l.right,r.left);
-
+        if(l.val!=r.val) return false;
+        boolean f= solve(l.left,r.right);
+        boolean s= solve(l.right,r.left);   
         return f&&s;
     }
     public boolean isSymmetric(TreeNode root) {
