@@ -9,7 +9,7 @@ class Solution {
             for(int k = i; k <= j; k++){
                 reach = Math.max(reach, k + nums[k]);
             }
-            i = j + 1;
+            i = j;
             j = reach;
             ans++;
         }
