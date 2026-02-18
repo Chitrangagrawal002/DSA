@@ -22,19 +22,20 @@ class Solution {
         dfs(node.left, map);
         dfs(node.right, map);
     }
+
     public int[] findMode(TreeNode root) {
         Map<Integer, Integer> map = new HashMap<>();
         dfs(root, map);
-        int maxfreq = 0;
-        for (int key : map.keySet()) {
-            maxfreq = Math.max(maxfreq, map.get(key));
-        }
-        List<Integer> ans = new ArrayList();
-        for (int key : map.keySet()) {
-            if (map.get(key) == maxfreq) {
-                ans.add(key);
-            }
-        }
+        int maxFreq = map.values()
+                .stream()
+                .max(Integer::compare)
+                .orElse(0);
+
+        List<Integer> ans = map.entrySet()
+                .stream()
+                .filter(e -> e.getValue() == maxFreq)
+                .map(Map.Entry::getKey)
+                .toList();
         int[] result = new int[ans.size()];
         for (int i = 0; i < ans.size(); i++) {
             result[i] = ans.get(i);
