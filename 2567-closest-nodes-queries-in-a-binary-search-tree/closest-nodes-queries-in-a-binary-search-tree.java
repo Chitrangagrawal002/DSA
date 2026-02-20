@@ -14,43 +14,45 @@
  * }
  */
 class Solution {
-    public void inorder(TreeNode root, List<Integer> list){
+    public void inorder(List<Integer> list, TreeNode root){
         if(root == null) return;
-        inorder(root.left, list);
+        inorder(list, root.left);
         list.add(root.val);
-        inorder(root.right, list);
+        inorder(list, root.right);
     }
     public List<List<Integer>> closestNodes(TreeNode root, List<Integer> queries) {
         List<Integer> list = new ArrayList<>();
-        inorder(root, list);
-        List<List<Integer>> res = new ArrayList<>();
+        inorder(list, root);
+        List<List<Integer>> ans = new ArrayList<>();
         for(int q : queries){
-            res.add(search(list, q));
+            ans.add(search(q, list));
         }
-
-        return res;
+        return ans;
     }
-    public List<Integer> search(List<Integer> list, int target){
-        int l = 0, r = list.size()-1;
+    public List<Integer> search(int q, List<Integer> list){
+        int l = 0;
+        int h = list.size() - 1;
         int floor = -1;
-        while(l <= r){
-            int mid = l + (r-l)/2;
-            if(list.get(mid) <= target){
+        while(l <= h){
+            int mid = l + (h - l) / 2;
+            if(list.get(mid) <= q){
                 floor = list.get(mid);
                 l = mid + 1;
-            } else {
-                r = mid - 1;
+            }
+            else{
+                h = mid - 1;
             }
         }
         l = 0;
-        r = list.size() - 1;
+        h = list.size() - 1;
         int ceil = -1;
-        while(l <= r){
-            int mid = l + (r-l)/2;
-            if(list.get(mid) >= target){
+        while(l <= h){
+            int mid = l + (h - l) / 2;
+            if(list.get(mid) >= q){
                 ceil = list.get(mid);
-                r = mid - 1;
-            } else {
+                h = mid - 1;
+            } 
+            else{
                 l = mid + 1;
             }
         }
