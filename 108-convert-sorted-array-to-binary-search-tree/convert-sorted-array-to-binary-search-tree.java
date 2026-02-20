@@ -19,7 +19,7 @@ class Solution {
     }
     public TreeNode construct(int[] nums, int l, int r){
         if(l > r) return null;
-        int mid = l + (r - l) / 2;
+        int mid = l + (r - l + 1) / 2;
         TreeNode root = new TreeNode(nums[mid]);
         root.left = construct(nums, l, mid - 1);
         root.right = construct(nums, mid + 1, r);
