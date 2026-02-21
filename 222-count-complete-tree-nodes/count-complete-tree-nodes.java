@@ -15,19 +15,9 @@
  */
 class Solution {
     public int countNodes(TreeNode root) {
-        if (root == null) return 0;
-        int count = 0;
-        Queue<TreeNode> q = new LinkedList<>();
-        q.add(root);
-        while(!q.isEmpty()){
-            int size = q.size();
-            count += size;
-            for(int i = 0; i < size; i++){
-                TreeNode curr = q.poll();
-                if(curr.left != null) q.add(curr.left);
-                if(curr.right != null) q.add(curr.right);
-            }
-        }
-        return count;
+        if(root == null) return 0;
+        int left = countNodes(root.left) + 1;
+        int right = countNodes(root.right) + 1;
+        return left + right - 1;
     }
 }
