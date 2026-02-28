@@ -7,7 +7,7 @@ class Solution {
             if((num & (num - 1)) == 0){
                 digit++;
             }
-            result = ((result << digit) % mod + num) % mod;
+            result = ((result << digit)+ num) % mod;
         }
         return (int)result;
     }
