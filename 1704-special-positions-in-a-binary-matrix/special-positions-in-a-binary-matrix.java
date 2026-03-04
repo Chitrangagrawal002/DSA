@@ -1,24 +1,26 @@
 class Solution {
     public int numSpecial(int[][] mat) {
-        int count = 0;
-        for(int i = 0; i < mat.length; i++){
-            for(int j = 0; j < mat[0].length; j++){
-                if(mat[i][j] == 1){
-                    if(isvalid(mat, i, j)){
-                        count++;
-                    }
+        int n = mat.length;
+        int m = mat[0].length;
+        int row[] = new int[n];
+        int col[] = new int[m];
+        for(int r = 0; r < n; r++){
+            for(int c = 0; c < m; c++){
+                if(mat[r][c] == 1){
+                    row[r]++;
+                    col[c]++;
                 }
             }
         }
-        return count;
-    }
-    public boolean isvalid(int[][] mat, int i, int j){
-        for(int k = 0; k < mat.length; k++){
-            if(k != i && mat[k][j] == 1) return false;
+        int result = 0;
+        for(int i = 0; i < n; i++){
+            for(int j = 0; j < m; j++){
+                if(mat[i][j] == 0) continue;
+                if(row[i] == 1 && col[j] == 1){
+                    result++;
+                }
+            }
         }
-        for(int k = 0; k < mat[0].length; k++){
-            if(k != j && mat[i][k] == 1) return false;
-        }
-        return true;
+        return result;
     }
 }
