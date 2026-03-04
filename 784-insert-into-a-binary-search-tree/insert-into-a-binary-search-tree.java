@@ -29,7 +29,7 @@ class Solution {
     }
     public TreeNode construct(List<Integer> list, int l, int r){
         if(l > r) return null;
-        int mid = l + (r - l) / 2;
+        int mid = l + (r - l + 1) / 2;
         TreeNode root = new TreeNode(list.get(mid));
         root.left = construct(list, l, mid - 1);
         root.right = construct(list, mid + 1, r);
