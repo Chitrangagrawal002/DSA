@@ -20,15 +20,10 @@ class Solution {
         int i = 0; 
         int j = list.size() - 1;
         while(i < j){
-            if((list.get(i) + list.get(j)) == k){
-                return true;
-            }
-            else if((list.get(i) + list.get(j)) < k){
-                i++;
-            }
-            else{
-                j--;
-            }
+            int sum = list.get(i) + list.get(j);
+            if(sum == k) return true;
+            else if(sum < k) i++;
+            else j--;
         }
         return false;
     }
