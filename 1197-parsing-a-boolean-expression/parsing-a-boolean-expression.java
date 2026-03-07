@@ -6,40 +6,31 @@ class Solution {
             char ch = expression.charAt(i);
             if(ch == ',') continue;
             if(ch == ')'){
-                List<Character> curr = new ArrayList<>();
+                boolean hasTrue = false;
+                boolean hasFalse = false;
                 while(st.peek() != '('){
-                    curr.add(st.pop());
+                    char val = st.pop();
+                    if(val == 't') hasTrue = true;
+                    if(val == 'f') hasFalse = true;
                 }
-                st.pop(); // removing '(' bracket from stack
+                st.pop();
                 char op = st.pop();
-                st.push(helper(curr, op));
+                char res = 'f';
+                if(op == '!'){
+                    res = hasTrue ? 'f' : 't';
+                }
+                else if(op == '&'){
+                    res = hasFalse ? 'f' : 't';
+                }
+                else{
+                    res = hasTrue ? 't' : 'f';
+                }
+                st.push(res);
             }
             else{
                 st.push(ch);
             }
         }
         return st.peek() == 't';
-    }
-    public char helper(List<Character> curr, char op){
-        if(op == '!'){
-            return curr.get(0) == 't' ? 'f' : 't';
-        }
-        if(op == '&'){
-            for(char ch : curr){
-                if(ch == 'f'){
-                    return 'f';
-                }
-            }
-            return 't';
-        }
-        if(op == '|'){
-            for(char ch : curr){
-                if(ch == 't'){
-                    return 't';
-                }
-            }
-            return 'f';
-        }
-        return 't';
     }
 }
