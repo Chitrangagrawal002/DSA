@@ -1,7 +1,7 @@
 class Solution {
     public boolean parseBoolExpr(String expression) {
         int n = expression.length();
-        Stack<Character> st = new Stack<>();
+        Deque<Character> st = new ArrayDeque<>();
         for(int i = 0; i < n; i++){
             char ch = expression.charAt(i);
             if(ch == ',') continue;
