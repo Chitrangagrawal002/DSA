@@ -1,16 +1,14 @@
 class Solution {
     public String[] sortPeople(String[] names, int[] heights) {
-        String map[] = new String[Arrays.stream(heights).max().getAsInt() + 1];
         int n = names.length;
+        List<int[]> list = new ArrayList<>();
         for(int i = 0; i < n; i++){
-            map[heights[i]] = names[i];
+            list.add(new int[]{heights[i], i});
         }
-        String ans[] = new String[n];
-        int k = 0;
-        for(int i = map.length - 1; i >= 0; i--){
-            if(map[i] != null){
-                ans[k++] = map[i];
-            }
+        list.sort((a, b) -> b[0] - a[0]);
+        String[] ans = new String[n];
+        for(int i = 0; i < n; i++){
+            ans[i] = names[list.get(i)[1]];
         }
         return ans;
     }
