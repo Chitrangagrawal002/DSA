@@ -1,20 +1,21 @@
 class Solution {
     public int calculateMinimumHP(int[][] mat) {
-        Integer dp[][] = new Integer[mat.length][mat[0].length];
-        return helper(mat, 0, 0, dp);
-    }
-    public int helper(int[][] mat, int i, int j, Integer[][] dp){
-        if(i == mat.length || j == mat[0].length){
-            return Integer.MAX_VALUE;
+        int n = mat.length;
+        int m = mat[0].length;
+        int[][] dp = new int[n][m];
+        dp[n-1][m-1] = (mat[n-1][m-1] <= 0) ? -mat[n-1][m-1] + 1 : 1;
+        for(int i = n - 2; i >= 0; i--){
+            dp[i][m-1] = Math.max(1, dp[i+1][m-1] - mat[i][m-1]);
         }
-        if(i == mat.length - 1 && j == mat[0].length - 1){
-            return (mat[i][j] <= 0) ? -mat[i][j] + 1 : 1;
+        for(int j = m - 2; j >= 0; j--){
+            dp[n-1][j] = Math.max(1, dp[n-1][j+1] - mat[n-1][j]);
         }
-        if(dp[i][j] != null) return dp[i][j];
-        int right = helper(mat, i, j + 1, dp);
-        int down = helper(mat, i + 1, j, dp);
-        int min = Math.min(right, down) - mat[i][j];
-        dp[i][j] = (min <= 0) ? 1 : min;
-        return dp[i][j];
+        for(int i = n - 2; i >= 0; i--){
+            for(int j = m - 2; j >= 0; j--){
+                int minNext = Math.min(dp[i+1][j], dp[i][j+1]);
+                dp[i][j] = Math.max(1, minNext - mat[i][j]);
+            }
+        }
+        return dp[0][0];
     }
 }
