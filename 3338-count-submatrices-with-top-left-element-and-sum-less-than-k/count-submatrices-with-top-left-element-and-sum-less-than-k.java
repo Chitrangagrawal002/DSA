@@ -19,6 +19,7 @@ class Solution {
                 if(grid[i][j] <= k){
                     ans++;
                 }
+                else break;
             }
         }
         return ans;
