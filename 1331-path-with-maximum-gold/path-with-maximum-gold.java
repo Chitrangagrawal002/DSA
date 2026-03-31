@@ -5,6 +5,7 @@ class Solution {
         int max_ans = 0;
         for(int i = 0; i < n; i++){
             for(int j = 0; j < m; j++){
+                if(grid[i][j] == 0) continue;
                 max_ans = Math.max(max_ans, helper(grid, i, j));
             }
         }
