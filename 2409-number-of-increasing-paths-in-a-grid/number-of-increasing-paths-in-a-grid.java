@@ -1,8 +1,8 @@
 class Solution {
     int n, m;
-    Integer[][] dp;
-    int mod = (int) 1e9 + 7;
-    int[][] dr = {{0, 1}, {1, 0}, {0, -1}, {-1, 0}};
+    Integer dp[][];
+    int mod = 1_000_000_007;
+    int dr[][] = {{0, 1}, {1, 0}, {0, -1}, {-1, 0}};
     public int countPaths(int[][] grid) {
         n = grid.length;
         m = grid[0].length;
@@ -21,13 +21,13 @@ class Solution {
         for(int x = 0; x < 4; x++){
             int nx = i + dr[x][0];
             int ny = j + dr[x][1];
-            if(isSafe(nx, ny) && grid[nx][ny] < grid[i][j]){
+            if(isSafe(nx, ny) && grid[nx][ny] > grid[i][j]){
                 ans = (ans + dfs(grid, nx, ny)) % mod;
             }
         }
         return dp[i][j] = ans;
     }
-    public boolean isSafe(int r, int c){
-        return r >= 0 && r < n && c >= 0 && c < m;
+    public boolean isSafe(int x, int y){
+        return x >= 0 && x < n && y >= 0 && y < m;
     }
 }
