@@ -11,9 +11,6 @@ class Solution {
         return min;
     }
     public int solve(int[][] grid, int i, int j, Integer[][] dp){
-        if(i >= n || j >= m || i < 0 || j < 0){
-            return Integer.MAX_VALUE;
-        }
         if(i == n - 1){
             return grid[i][j];
         }
