@@ -5,10 +5,8 @@ class Solution {
         int cap = capacity;
         for(int i = 0; i < n; i++){
             if(cap < plants[i]){
-                ans += i - 0;
-                cap = capacity;
-                ans += i - 0 + 1;
-                cap -= plants[i];
+                ans += 2 * i + 1;
+                cap = capacity - plants[i];
             }
             else{
                 cap -= plants[i];
