@@ -1,0 +1,17 @@
+<h2><a href="https://codeforces.com/contest/2200/problem/A" target="_blank" rel="noopener noreferrer">2200A — Eating Game</a></h2>
+
+| | |
+|---|---|
+| **Difficulty** | 800 |
+| **Language** | Java 21 |
+| **Verdict** | ✅ Accepted |
+| **Problem Link** | [Codeforces 2200A](https://codeforces.com/contest/2200/problem/A) |
+
+## Topics
+`greedy`
+
+---
+
+## Problem Statement
+
+<div class="header"><div class="title">A. Eating Game</div><div class="time-limit"><div class="property-title">time limit per test</div>1 second</div><div class="memory-limit"><div class="property-title">memory limit per test</div>256 megabytes</div><div class="input-file input-standard"><div class="property-title">input</div>standard input</div><div class="output-file output-standard"><div class="property-title">output</div>standard output</div></div><div><p>There are $$$n$$$ players playing a game at a circular table. The $$$i$$$-th player has $$$a_i$$$ dishes to eat. They take turns eating the food, and any player can go first.</p><p>During their turn, if player $$$i$$$ has any dishes remaining, they must eat exactly one dish. Then, player $$$(i \bmod n) + 1$$$ starts their turn. This continues until all dishes are finished.</p><p>The player who eats the last dish is considered the winner. Determine the number of players that can possibly be winners.</p></div><div class="input-specification"><div class="section-title">Input</div><p>The first line contains an integer $$$t$$$ ($$$1 \leq t \leq 5000$$$), the number of test cases.</p><p>The first line of each test case contains an integer $$$n$$$ ($$$1 \leq n \leq 10$$$).</p><p>The second line of each test case contains $$$n$$$ integers, the elements of $$$a$$$ ($$$1 \leq a_i \leq 10$$$).</p></div><div class="output-specification"><div class="section-title">Output</div><p>For each test case, output a line with the answer.</p></div><div class="sample-tests"><div class="section-title">Example</div><div class="sample-test"><div class="input"><div class="title">Input<div title="Copy" data-clipboard-target="#id0043731388383861747" id="id007678519857820868" class="input-output-copier">Copy</div></div><pre id="id0043731388383861747"><div class="test-example-line test-example-line-even test-example-line-0">3</div><div class="test-example-line test-example-line-odd test-example-line-1">1</div><div class="test-example-line test-example-line-odd test-example-line-1">10</div><div class="test-example-line test-example-line-even test-example-line-2">2</div><div class="test-example-line test-example-line-even test-example-line-2">6 7</div><div class="test-example-line test-example-line-odd test-example-line-3">4</div><div class="test-example-line test-example-line-odd test-example-line-3">1 4 3 4</div></pre></div><div class="output"><div class="title">Output<div title="Copy" data-clipboard-target="#id0007770273175011555" id="id008711729407521291" class="input-output-copier">Copy</div></div><pre id="id0007770273175011555"><div class="test-example-line test-example-line-odd test-example-line-1">1</div><div class="test-example-line test-example-line-even test-example-line-2">1</div><div class="test-example-line test-example-line-odd test-example-line-3">2</div></pre></div></div></div><div class="note"><div class="section-title">Note</div><p>In the first test case, player $$$1$$$ wins for every starting player.</p><p>In the second test case, player $$$2$$$ wins for every starting player.</p><p>In the third test case, players $$$2$$$ and $$$4$$$ can win.</p></div>
