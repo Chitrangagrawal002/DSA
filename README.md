@@ -6,21 +6,147 @@
 
 | Total Problems | Topics |
 |---|---|
-| 1 | 1 |
+| 16 | 16 |
 
 ---
 
 ## 📂 Topic-Wise Problems
 
-- [greedy](#greedy) (1)
+- [binary search](#binary-search) (1)
+- [bitmasks](#bitmasks) (1)
+- [brute force](#brute-force) (3)
+- [constructive algorithms](#constructive-algorithms) (4)
+- [data structures](#data-structures) (1)
+- [divide and conquer](#divide-and-conquer) (1)
+- [games](#games) (1)
+- [geometry](#geometry) (1)
+- [greedy](#greedy) (9)
+- [hashing](#hashing) (1)
+- [implementation](#implementation) (3)
+- [math](#math) (6)
+- [sortings](#sortings) (2)
+- [strings](#strings) (1)
+- [trees](#trees) (1)
+- [two pointers](#two-pointers) (1)
 
 ---
+
+### binary search
+
+| # | Problem | Difficulty | Solution |
+|---|---------|------------|----------|
+| 2148E | [Split](https://codeforces.com/contest/2148/problem/E) | 1200 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/2148/E%20-%20Split/solution.java) |
+
+### bitmasks
+
+| # | Problem | Difficulty | Solution |
+|---|---------|------------|----------|
+| 2146D1 | [Max Sum OR (Easy Version)](https://codeforces.com/contest/2146/problem/D1) | 1500 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/2146/D1%20-%20Max%20Sum%20OR%20(Easy%20Version)/solution.java) |
+
+### brute force
+
+| # | Problem | Difficulty | Solution |
+|---|---------|------------|----------|
+| 2137C | [Maximum Even Sum](https://codeforces.com/contest/2137/problem/C) | 1100 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/2137/C%20-%20Maximum%20Even%20Sum/solution.java) |
+| 2146A | [Equal Occurrences](https://codeforces.com/contest/2146/problem/A) | 800 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/2146/A%20-%20Equal%20Occurrences/solution.java) |
+| 2148A | [Sublime Sequence](https://codeforces.com/contest/2148/problem/A) | 800 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/2148/A%20-%20Sublime%20Sequence/solution.java) |
+
+### constructive algorithms
+
+| # | Problem | Difficulty | Solution |
+|---|---------|------------|----------|
+| 2137A | [Collatz Conjecture](https://codeforces.com/contest/2137/problem/A) | 800 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/2137/A%20-%20Collatz%20Conjecture/solution.java) |
+| 2137D | [Replace with Occurrences](https://codeforces.com/contest/2137/problem/D) | 1200 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/2137/D%20-%20Replace%20with%20Occurrences/solution.java) |
+| 2146D1 | [Max Sum OR (Easy Version)](https://codeforces.com/contest/2146/problem/D1) | 1500 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/2146/D1%20-%20Max%20Sum%20OR%20(Easy%20Version)/solution.java) |
+| 2148D | [Destruction of the Dandelion Fields](https://codeforces.com/contest/2148/problem/D) | 1000 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/2148/D%20-%20Destruction%20of%20the%20Dandelion%20Fields/solution.java) |
+
+### data structures
+
+| # | Problem | Difficulty | Solution |
+|---|---------|------------|----------|
+| 2148E | [Split](https://codeforces.com/contest/2148/problem/E) | 1200 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/2148/E%20-%20Split/solution.java) |
+
+### divide and conquer
+
+| # | Problem | Difficulty | Solution |
+|---|---------|------------|----------|
+| 2146D1 | [Max Sum OR (Easy Version)](https://codeforces.com/contest/2146/problem/D1) | 1500 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/2146/D1%20-%20Max%20Sum%20OR%20(Easy%20Version)/solution.java) |
+
+### games
+
+| # | Problem | Difficulty | Solution |
+|---|---------|------------|----------|
+| 2161A | [Round Trip](https://codeforces.com/contest/2161/problem/A) | 800 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/2161/A%20-%20Round%20Trip/solution.java) |
+
+### geometry
+
+| # | Problem | Difficulty | Solution |
+|---|---------|------------|----------|
+| 2148B | [Lasers](https://codeforces.com/contest/2148/problem/B) | 800 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/2148/B%20-%20Lasers/solution.java) |
 
 ### greedy
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
 | 337A | [Puzzles](https://codeforces.com/contest/337/problem/A) | 900 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/337/A%20-%20Puzzles/solution.java) |
+| 2137C | [Maximum Even Sum](https://codeforces.com/contest/2137/problem/C) | 1100 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/2137/C%20-%20Maximum%20Even%20Sum/solution.java) |
+| 2146A | [Equal Occurrences](https://codeforces.com/contest/2146/problem/A) | 800 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/2146/A%20-%20Equal%20Occurrences/solution.java) |
+| 2146D1 | [Max Sum OR (Easy Version)](https://codeforces.com/contest/2146/problem/D1) | 1500 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/2146/D1%20-%20Max%20Sum%20OR%20(Easy%20Version)/solution.java) |
+| 2148C | [Pacer](https://codeforces.com/contest/2148/problem/C) | 900 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/2148/C%20-%20Pacer/solution.java) |
+| 2148D | [Destruction of the Dandelion Fields](https://codeforces.com/contest/2148/problem/D) | 1000 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/2148/D%20-%20Destruction%20of%20the%20Dandelion%20Fields/solution.java) |
+| 2149B | [Unconventional Pairs](https://codeforces.com/contest/2149/problem/B) | 800 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/2149/B%20-%20Unconventional%20Pairs/solution.java) |
+| 2149C | [MEX rose](https://codeforces.com/contest/2149/problem/C) | 900 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/2149/C%20-%20MEX%20rose/solution.java) |
+| 2161A | [Round Trip](https://codeforces.com/contest/2161/problem/A) | 800 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/2161/A%20-%20Round%20Trip/solution.java) |
+
+### hashing
+
+| # | Problem | Difficulty | Solution |
+|---|---------|------------|----------|
+| 2148A | [Sublime Sequence](https://codeforces.com/contest/2148/problem/A) | 800 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/2148/A%20-%20Sublime%20Sequence/solution.java) |
+
+### implementation
+
+| # | Problem | Difficulty | Solution |
+|---|---------|------------|----------|
+| 2137C | [Maximum Even Sum](https://codeforces.com/contest/2137/problem/C) | 1100 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/2137/C%20-%20Maximum%20Even%20Sum/solution.java) |
+| 2146A | [Equal Occurrences](https://codeforces.com/contest/2146/problem/A) | 800 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/2146/A%20-%20Equal%20Occurrences/solution.java) |
+| 2161A | [Round Trip](https://codeforces.com/contest/2161/problem/A) | 800 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/2161/A%20-%20Round%20Trip/solution.java) |
+
+### math
+
+| # | Problem | Difficulty | Solution |
+|---|---------|------------|----------|
+| 2137A | [Collatz Conjecture](https://codeforces.com/contest/2137/problem/A) | 800 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/2137/A%20-%20Collatz%20Conjecture/solution.java) |
+| 2137C | [Maximum Even Sum](https://codeforces.com/contest/2137/problem/C) | 1100 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/2137/C%20-%20Maximum%20Even%20Sum/solution.java) |
+| 2148A | [Sublime Sequence](https://codeforces.com/contest/2148/problem/A) | 800 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/2148/A%20-%20Sublime%20Sequence/solution.java) |
+| 2148C | [Pacer](https://codeforces.com/contest/2148/problem/C) | 900 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/2148/C%20-%20Pacer/solution.java) |
+| 2149A | [Be Positive](https://codeforces.com/contest/2149/problem/A) | 800 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/2149/A%20-%20Be%20Positive/solution.java) |
+| 2161A | [Round Trip](https://codeforces.com/contest/2161/problem/A) | 800 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/2161/A%20-%20Round%20Trip/solution.java) |
+
+### sortings
+
+| # | Problem | Difficulty | Solution |
+|---|---------|------------|----------|
+| 2148D | [Destruction of the Dandelion Fields](https://codeforces.com/contest/2148/problem/D) | 1000 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/2148/D%20-%20Destruction%20of%20the%20Dandelion%20Fields/solution.java) |
+| 2149B | [Unconventional Pairs](https://codeforces.com/contest/2149/problem/B) | 800 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/2149/B%20-%20Unconventional%20Pairs/solution.java) |
+
+### strings
+
+| # | Problem | Difficulty | Solution |
+|---|---------|------------|----------|
+| 2149D | [A and B](https://codeforces.com/contest/2149/problem/D) | 1200 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/2149/D%20-%20A%20and%20B/solution.java) |
+
+### trees
+
+| # | Problem | Difficulty | Solution |
+|---|---------|------------|----------|
+| 2146D1 | [Max Sum OR (Easy Version)](https://codeforces.com/contest/2146/problem/D1) | 1500 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/2146/D1%20-%20Max%20Sum%20OR%20(Easy%20Version)/solution.java) |
+
+### two pointers
+
+| # | Problem | Difficulty | Solution |
+|---|---------|------------|----------|
+| 2148E | [Split](https://codeforces.com/contest/2148/problem/E) | 1200 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/2148/E%20-%20Split/solution.java) |
 
 ---
 
