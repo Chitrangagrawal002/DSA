@@ -1,0 +1,23 @@
+<h2><a href="https://codeforces.com/contest/1832/problem/B" target="_blank" rel="noopener noreferrer">1832B — Maximum Sum</a></h2>
+
+| | |
+|---|---|
+| **Difficulty** | 1100 |
+| **Language** | Java 21 |
+| **Verdict** | ✅ Accepted |
+| **Problem Link** | [Codeforces 1832B](https://codeforces.com/contest/1832/problem/B) |
+
+## Topics
+`brute force` `sortings` `two pointers`
+
+---
+
+## Problem Statement
+
+<div class="header"><div class="title">B. Maximum Sum</div><div class="time-limit"><div class="property-title">time limit per test</div>2 seconds</div><div class="memory-limit"><div class="property-title">memory limit per test</div>256 megabytes</div><div class="input-file input-standard"><div class="property-title">input</div>standard input</div><div class="output-file output-standard"><div class="property-title">output</div>standard output</div></div><div><p>You are given an array $$$a_1, a_2, \dots, a_n$$$, where all elements are different.</p><p>You have to perform <span class="tex-font-style-bf">exactly</span> $$$k$$$ operations with it. During each operation, you do <span class="tex-font-style-bf">exactly one</span> of the following two actions (you choose which to do yourself):</p><ul> <li> find <span class="tex-font-style-bf">two minimum elements</span> in the array, and delete them; </li><li> find <span class="tex-font-style-bf">the maximum element</span> in the array, and delete it. </li></ul><p>You have to calculate the maximum possible sum of elements in the resulting array.</p></div><div class="input-specification"><div class="section-title">Input</div><p>The first line contains one integer $$$t$$$ ($$$1 \le t \le 10^4$$$) — the number of test cases.</p><p>Each test case consists of two lines: </p><ul> <li> the first line contains two integers $$$n$$$ and $$$k$$$ ($$$3 \le n \le 2 \cdot 10^5$$$; $$$1 \le k \le 99999$$$; $$$2k  \lt  n$$$) — the number of elements and operations, respectively. </li><li> the second line contains $$$n$$$ integers $$$a_1, a_2, \dots, a_n$$$ ($$$1 \le a_i \le 10^9$$$; all $$$a_i$$$ are different) — the elements of the array. </li></ul><p>Additional constraint on the input: the sum of $$$n$$$ does not exceed $$$2 \cdot 10^5$$$.</p></div><div class="output-specification"><div class="section-title">Output</div><p>For each test case, print one integer — the maximum possible sum of elements in the resulting array.</p></div><div class="sample-tests"><div class="section-title">Example</div><div class="sample-test"><div class="input"><div class="title">Input<div title="Copy" data-clipboard-target="#id0020486087947736142" id="id008741635307812154" class="input-output-copier">Copy</div></div><pre id="id0020486087947736142"><div class="test-example-line test-example-line-even test-example-line-0">6</div><div class="test-example-line test-example-line-odd test-example-line-1">5 1</div><div class="test-example-line test-example-line-odd test-example-line-1">2 5 1 10 6</div><div class="test-example-line test-example-line-even test-example-line-2">5 2</div><div class="test-example-line test-example-line-even test-example-line-2">2 5 1 10 6</div><div class="test-example-line test-example-line-odd test-example-line-3">3 1</div><div class="test-example-line test-example-line-odd test-example-line-3">1 2 3</div><div class="test-example-line test-example-line-even test-example-line-4">6 1</div><div class="test-example-line test-example-line-even test-example-line-4">15 22 12 10 13 11</div><div class="test-example-line test-example-line-odd test-example-line-5">6 2</div><div class="test-example-line test-example-line-odd test-example-line-5">15 22 12 10 13 11</div><div class="test-example-line test-example-line-even test-example-line-6">5 1</div><div class="test-example-line test-example-line-even test-example-line-6">999999996 999999999 999999997 999999998 999999995</div></pre></div><div class="output"><div class="title">Output<div title="Copy" data-clipboard-target="#id0006299153419607828" id="id00376200787023244" class="input-output-copier">Copy</div></div><pre id="id0006299153419607828">21
+11
+3
+62
+46
+3999999986
+</pre></div></div></div><div class="note"><div class="section-title">Note</div><p>In the first testcase, applying the first operation produces the following outcome: </p><ul> <li> two minimums are $$$1$$$ and $$$2$$$; removing them leaves the array as $$$[5, 10, 6]$$$, with sum $$$21$$$; </li><li> a maximum is $$$10$$$; removing it leaves the array as $$$[2, 5, 1, 6]$$$, with sum $$$14$$$. </li></ul><p>$$$21$$$ is the best answer.</p><p>In the second testcase, it's optimal to first erase two minimums, then a maximum.</p></div>
