@@ -6,36 +6,46 @@
 
 | Total Problems | Topics |
 |---|---|
-| 31 | 17 |
+| 37 | 18 |
 
 ---
 
 ## 📂 Topic-Wise Problems
 
-- [binary search](#binary-search) (1)
+- [*special](#special) (1)
+- [binary search](#binary-search) (4)
 - [bitmasks](#bitmasks) (2)
-- [brute force](#brute-force) (9)
+- [brute force](#brute-force) (10)
 - [constructive algorithms](#constructive-algorithms) (6)
 - [data structures](#data-structures) (2)
 - [divide and conquer](#divide-and-conquer) (1)
 - [games](#games) (1)
 - [geometry](#geometry) (1)
 - [graphs](#graphs) (1)
-- [greedy](#greedy) (14)
+- [greedy](#greedy) (16)
 - [hashing](#hashing) (1)
-- [implementation](#implementation) (5)
-- [math](#math) (11)
+- [implementation](#implementation) (8)
+- [math](#math) (13)
 - [sortings](#sortings) (5)
-- [strings](#strings) (4)
+- [strings](#strings) (5)
 - [trees](#trees) (1)
-- [two pointers](#two-pointers) (3)
+- [two pointers](#two-pointers) (5)
 
 ---
+
+### *special
+
+| # | Problem | Difficulty | Solution |
+|---|---------|------------|----------|
+| 158B | [Taxi](https://codeforces.com/contest/158/problem/B) | 1100 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/158/B%20-%20Taxi/solution.java) |
 
 ### binary search
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
+| 279B | [Books](https://codeforces.com/contest/279/problem/B) | 1400 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/279/B%20-%20Books/solution.java) |
+| 701C | [They Are Everywhere](https://codeforces.com/contest/701/problem/C) | 1500 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/701/C%20-%20They%20Are%20Everywhere/solution.java) |
+| 1352C | [K-th Not Divisible by n](https://codeforces.com/contest/1352/problem/C) | 1200 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/1352/C%20-%20K-th%20Not%20Divisible%20by%20n/solution.java) |
 | 2148E | [Split](https://codeforces.com/contest/2148/problem/E) | 1200 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/2148/E%20-%20Split/solution.java) |
 
 ### bitmasks
@@ -50,6 +60,7 @@
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
 | 4A | [Watermelon](https://codeforces.com/contest/4/problem/A) | 800 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/4/A%20-%20Watermelon/solution.java) |
+| 279B | [Books](https://codeforces.com/contest/279/problem/B) | 1400 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/279/B%20-%20Books/solution.java) |
 | 1832B | [Maximum Sum](https://codeforces.com/contest/1832/problem/B) | 1100 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/1832/B%20-%20Maximum%20Sum/solution.java) |
 | 1875A | [Jellyfish and Undertale](https://codeforces.com/contest/1875/problem/A) | 900 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/1875/A%20-%20Jellyfish%20and%20Undertale/solution.java) |
 | 2137C | [Maximum Even Sum](https://codeforces.com/contest/2137/problem/C) | 1100 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/2137/C%20-%20Maximum%20Even%20Sum/solution.java) |
@@ -105,7 +116,9 @@
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
+| 158B | [Taxi](https://codeforces.com/contest/158/problem/B) | 1100 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/158/B%20-%20Taxi/solution.java) |
 | 337A | [Puzzles](https://codeforces.com/contest/337/problem/A) | 900 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/337/A%20-%20Puzzles/solution.java) |
+| 1447B | [Numbers Box](https://codeforces.com/contest/1447/problem/B) | 1000 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/1447/B%20-%20Numbers%20Box/solution.java) |
 | 1875A | [Jellyfish and Undertale](https://codeforces.com/contest/1875/problem/A) | 900 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/1875/A%20-%20Jellyfish%20and%20Undertale/solution.java) |
 | 2137C | [Maximum Even Sum](https://codeforces.com/contest/2137/problem/C) | 1100 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/2137/C%20-%20Maximum%20Even%20Sum/solution.java) |
 | 2146A | [Equal Occurrences](https://codeforces.com/contest/2146/problem/A) | 800 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/2146/A%20-%20Equal%20Occurrences/solution.java) |
@@ -130,6 +143,9 @@
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
+| 81A | [Plug-in](https://codeforces.com/contest/81/problem/A) | 1400 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/81/A%20-%20Plug-in/solution.java) |
+| 158B | [Taxi](https://codeforces.com/contest/158/problem/B) | 1100 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/158/B%20-%20Taxi/solution.java) |
+| 279B | [Books](https://codeforces.com/contest/279/problem/B) | 1400 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/279/B%20-%20Books/solution.java) |
 | 2137C | [Maximum Even Sum](https://codeforces.com/contest/2137/problem/C) | 1100 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/2137/C%20-%20Maximum%20Even%20Sum/solution.java) |
 | 2146A | [Equal Occurrences](https://codeforces.com/contest/2146/problem/A) | 800 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/2146/A%20-%20Equal%20Occurrences/solution.java) |
 | 2161A | [Round Trip](https://codeforces.com/contest/2161/problem/A) | 800 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/2161/A%20-%20Round%20Trip/solution.java) |
@@ -141,6 +157,8 @@
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
 | 4A | [Watermelon](https://codeforces.com/contest/4/problem/A) | 800 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/4/A%20-%20Watermelon/solution.java) |
+| 1352C | [K-th Not Divisible by n](https://codeforces.com/contest/1352/problem/C) | 1200 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/1352/C%20-%20K-th%20Not%20Divisible%20by%20n/solution.java) |
+| 1447B | [Numbers Box](https://codeforces.com/contest/1447/problem/B) | 1000 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/1447/B%20-%20Numbers%20Box/solution.java) |
 | 2137A | [Collatz Conjecture](https://codeforces.com/contest/2137/problem/A) | 800 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/2137/A%20-%20Collatz%20Conjecture/solution.java) |
 | 2137C | [Maximum Even Sum](https://codeforces.com/contest/2137/problem/C) | 1100 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/2137/C%20-%20Maximum%20Even%20Sum/solution.java) |
 | 2148A | [Sublime Sequence](https://codeforces.com/contest/2148/problem/A) | 800 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/2148/A%20-%20Sublime%20Sequence/solution.java) |
@@ -167,6 +185,7 @@
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
 | 71A | [Way Too Long Words](https://codeforces.com/contest/71/problem/A) | 800 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/71/A%20-%20Way%20Too%20Long%20Words/solution.java) |
+| 701C | [They Are Everywhere](https://codeforces.com/contest/701/problem/C) | 1500 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/701/C%20-%20They%20Are%20Everywhere/solution.java) |
 | 1913B | [Swap and Delete](https://codeforces.com/contest/1913/problem/B) | 1000 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/1913/B%20-%20Swap%20and%20Delete/solution.java) |
 | 2149D | [A and B](https://codeforces.com/contest/2149/problem/D) | 1200 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/2149/D%20-%20A%20and%20B/solution.java) |
 | 2200C | [Specialty String](https://codeforces.com/contest/2200/problem/C) | 900 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/2200/C%20-%20Specialty%20String/solution.java) |
@@ -181,6 +200,8 @@
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
+| 279B | [Books](https://codeforces.com/contest/279/problem/B) | 1400 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/279/B%20-%20Books/solution.java) |
+| 701C | [They Are Everywhere](https://codeforces.com/contest/701/problem/C) | 1500 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/701/C%20-%20They%20Are%20Everywhere/solution.java) |
 | 1832B | [Maximum Sum](https://codeforces.com/contest/1832/problem/B) | 1100 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/1832/B%20-%20Maximum%20Sum/solution.java) |
 | 2148E | [Split](https://codeforces.com/contest/2148/problem/E) | 1200 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/2148/E%20-%20Split/solution.java) |
 | 2185D | [OutOfMemoryError](https://codeforces.com/contest/2185/problem/D) | 1100 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/2185/D%20-%20OutOfMemoryError/solution.java) |
