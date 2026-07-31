@@ -6,7 +6,7 @@
 
 | Total Problems | Topics |
 |---|---|
-| 38 | 19 |
+| 39 | 19 |
 
 ---
 
@@ -15,17 +15,17 @@
 - [*special](#special) (1)
 - [binary search](#binary-search) (4)
 - [bitmasks](#bitmasks) (2)
-- [brute force](#brute-force) (10)
+- [brute force](#brute-force) (11)
 - [constructive algorithms](#constructive-algorithms) (6)
 - [data structures](#data-structures) (2)
 - [divide and conquer](#divide-and-conquer) (1)
-- [dp](#dp) (1)
+- [dp](#dp) (2)
 - [games](#games) (1)
 - [geometry](#geometry) (1)
 - [graphs](#graphs) (1)
 - [greedy](#greedy) (17)
 - [hashing](#hashing) (1)
-- [implementation](#implementation) (8)
+- [implementation](#implementation) (9)
 - [math](#math) (13)
 - [sortings](#sortings) (5)
 - [strings](#strings) (5)
@@ -62,6 +62,7 @@
 |---|---------|------------|----------|
 | 4A | [Watermelon](https://codeforces.com/contest/4/problem/A) | 800 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/4/A%20-%20Watermelon/solution.java) |
 | 279B | [Books](https://codeforces.com/contest/279/problem/B) | 1400 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/279/B%20-%20Books/solution.java) |
+| 580A | [Kefa and First Steps](https://codeforces.com/contest/580/problem/A) | 900 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/580/A%20-%20Kefa%20and%20First%20Steps/solution.java) |
 | 1832B | [Maximum Sum](https://codeforces.com/contest/1832/problem/B) | 1100 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/1832/B%20-%20Maximum%20Sum/solution.java) |
 | 1875A | [Jellyfish and Undertale](https://codeforces.com/contest/1875/problem/A) | 900 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/1875/A%20-%20Jellyfish%20and%20Undertale/solution.java) |
 | 2137C | [Maximum Even Sum](https://codeforces.com/contest/2137/problem/C) | 1100 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/2137/C%20-%20Maximum%20Even%20Sum/solution.java) |
@@ -99,6 +100,7 @@
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
+| 580A | [Kefa and First Steps](https://codeforces.com/contest/580/problem/A) | 900 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/580/A%20-%20Kefa%20and%20First%20Steps/solution.java) |
 | 996A | [Hit the Lottery](https://codeforces.com/contest/996/problem/A) | 800 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/996/A%20-%20Hit%20the%20Lottery/solution.java) |
 
 ### games
@@ -154,6 +156,7 @@
 | 81A | [Plug-in](https://codeforces.com/contest/81/problem/A) | 1400 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/81/A%20-%20Plug-in/solution.java) |
 | 158B | [Taxi](https://codeforces.com/contest/158/problem/B) | 1100 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/158/B%20-%20Taxi/solution.java) |
 | 279B | [Books](https://codeforces.com/contest/279/problem/B) | 1400 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/279/B%20-%20Books/solution.java) |
+| 580A | [Kefa and First Steps](https://codeforces.com/contest/580/problem/A) | 900 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/580/A%20-%20Kefa%20and%20First%20Steps/solution.java) |
 | 2137C | [Maximum Even Sum](https://codeforces.com/contest/2137/problem/C) | 1100 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/2137/C%20-%20Maximum%20Even%20Sum/solution.java) |
 | 2146A | [Equal Occurrences](https://codeforces.com/contest/2146/problem/A) | 800 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/2146/A%20-%20Equal%20Occurrences/solution.java) |
 | 2161A | [Round Trip](https://codeforces.com/contest/2161/problem/A) | 800 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/2161/A%20-%20Round%20Trip/solution.java) |
