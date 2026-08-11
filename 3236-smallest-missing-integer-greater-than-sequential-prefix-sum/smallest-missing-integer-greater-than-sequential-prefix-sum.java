@@ -1,23 +1,33 @@
 class Solution {
     public int missingInteger(int[] nums) {
-        int n = nums.length;
-        int max = Arrays.stream(nums).max().getAsInt();
-        int map[] = new int[max + 1];
+
         int sum = nums[0];
-        map[nums[0]] = 1;
-        boolean flag = true;
-        for(int i = 1; i < n; i++){
-            if(flag && nums[i] == nums[i - 1] + 1){
+
+        for (int i = 1; i < nums.length; i++) {
+            if (nums[i] == nums[i - 1] + 1) {
                 sum += nums[i];
+            } else {
+                break;
             }
-            else{
-                flag = false;
+        }
+
+        int x = sum;
+
+        while (true) {
+            boolean found = false;
+
+            for (int num : nums) {
+                if (num == x) {
+                    found = true;
+                    break;
+                }
             }
-            map[nums[i]]++;
+
+            if (!found) {
+                return x;
+            }
+
+            x++;
         }
-        while(sum <= max && map[sum] != 0){
-            sum++;
-        }
-        return sum;
     }
 }
