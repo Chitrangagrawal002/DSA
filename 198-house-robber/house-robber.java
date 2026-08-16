@@ -1,18 +1,17 @@
 class Solution {
     public int rob(int[] nums) {
-        int n = nums.length;
-        if(n == 1){
-            return nums[0];
+        Integer dp[] = new Integer[nums.length];
+        return solve(nums, 0, dp);
+    }
+    public int solve(int[] nums, int i, Integer[] dp){
+        if(i >= nums.length){
+            return 0;
         }
-        int dp[] = new int[n];
-        dp[0] = nums[0];
-        dp[1] = Math.max(nums[0], nums[1]);
-        for(int i = 2; i < n; i++){
-            int pick = nums[i] + dp[i - 2];
-            int skip = dp[i - 1];
-            dp[i] = Math.max(pick, skip);
+        if(dp[i] != null){
+            return dp[i];
         }
-        return dp[n - 1];
-
+        int pick = nums[i] + solve(nums, i + 2, dp);
+        int notpick = solve(nums, i + 1, dp);
+        return dp[i] = Math.max(pick, notpick);
     }
 }
