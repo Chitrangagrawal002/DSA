@@ -6,7 +6,7 @@
 
 | Total Problems | Topics |
 |---|---|
-| 40 | 19 |
+| 41 | 19 |
 
 ---
 
@@ -23,7 +23,7 @@
 - [games](#games) (1)
 - [geometry](#geometry) (1)
 - [graphs](#graphs) (1)
-- [greedy](#greedy) (18)
+- [greedy](#greedy) (19)
 - [hashing](#hashing) (1)
 - [implementation](#implementation) (10)
 - [math](#math) (13)
@@ -131,6 +131,7 @@
 | 337A | [Puzzles](https://codeforces.com/contest/337/problem/A) | 900 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/337/A%20-%20Puzzles/solution.java) |
 | 996A | [Hit the Lottery](https://codeforces.com/contest/996/problem/A) | 800 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/996/A%20-%20Hit%20the%20Lottery/solution.java) |
 | 1447B | [Numbers Box](https://codeforces.com/contest/1447/problem/B) | 1000 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/1447/B%20-%20Numbers%20Box/solution.java) |
+| 1696B | [NIT Destroys the Universe](https://codeforces.com/contest/1696/problem/B) | 900 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/1696/B%20-%20NIT%20Destroys%20the%20Universe/solution.java) |
 | 1875A | [Jellyfish and Undertale](https://codeforces.com/contest/1875/problem/A) | 900 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/1875/A%20-%20Jellyfish%20and%20Undertale/solution.java) |
 | 1914D | [Three Activities](https://codeforces.com/contest/1914/problem/D) | 1200 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/1914/D%20-%20Three%20Activities/solution.java) |
 | 2137C | [Maximum Even Sum](https://codeforces.com/contest/2137/problem/C) | 1100 | [Java 21](https://github.com/Chitrangagrawal002/DSA/blob/HEAD/2137/C%20-%20Maximum%20Even%20Sum/solution.java) |
